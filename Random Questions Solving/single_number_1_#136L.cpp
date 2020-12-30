@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    // method 1 XOR
+    // method 1 XOR :- Time O(n),Space O(1)
     vector<int>v={1,2,1,2,4};
     
     int ans=0;
@@ -16,7 +16,7 @@ int main()
     return 0;
 }
 /*
-method 2 HashMap
+method 2 HashMap :- Time O(n),Space O(n)
 
 use hashmap & store values
 check if that element already avaialable in hashmap 
