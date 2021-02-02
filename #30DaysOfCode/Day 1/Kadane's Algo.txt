@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() 
+{
+	
+	int n;cin>>n;
+	vector<int> v1;
+	for(int i=0;i<n;i++)
+	{
+		int i1;cin>>i1;
+		v1.push_back(i1);
+	}
+	int totalsum=v1[0],tempsum=v1[0];
+	
+	for(int a=1;a<v1.size();a++)
+	{
+		if(tempsum >= 0)
+		{
+			tempsum += v1[a];
+		}
+		else
+		{
+			tempsum = v1[a];
+		}
+		if(tempsum>totalsum)
+		{
+			totalsum = tempsum;
+		}
+		
+	}
+	cout<<totalsum<<"\n";
+        
+	
+	return 0;
+}
